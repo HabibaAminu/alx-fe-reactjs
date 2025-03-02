@@ -4,12 +4,13 @@ function Navbar() {
   return (
     <nav style={{
       backgroundColor:'#282A54',
+      fontFamily: "sans-serif",
       display:'flex',
       padding: '10px 0',
       textAlign:'center',
       color:'white',
-      justifyContent:'space-between',
-      gap:'10'}}>
+      justifyContent:'center',
+      gap:'20px'}}>
         <Link to="/" style={{textDecoration:'none', color:'white'}}>Home</Link>
         <Link to="/About" style={{textDecoration: 'none', color:'white' }}>About</Link>
         <Link to="/Services" style={{textDecoration: 'none', color:'white' }}>Services</Link>
