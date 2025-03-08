@@ -5,8 +5,8 @@ const EditRecipeForm = ({ index, recipe, onCancel }) => {
   const [updatedRecipe, setUpdatedRecipe] = useState(recipe);
   const editRecipe = useRecipeStore((state) => state.editRecipe);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     editRecipe(index, updatedRecipe);
     onCancel(); // Close the form after editing
   };
