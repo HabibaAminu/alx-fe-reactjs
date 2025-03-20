@@ -15,6 +15,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/recipe/:recipeId" element={<RecipeDetails />} />
         </Routes>
       </Router>
     </div>
