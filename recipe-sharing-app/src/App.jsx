@@ -14,7 +14,7 @@ function App() {
       <RecipeList />
       <Router>
         <Routes>
-          <Route path="/" element></Route>
+          <Route path="/" element={<Home />} />
         </Routes>
       </Router>
     </div>
